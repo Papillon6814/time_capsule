@@ -4,7 +4,9 @@
 <ul>
   <% @capsules.each do |capsule| %>
     <li>
-      <%= capsule.title %>
+      <a href="/capsules/<%= capsule.id %>">
+        <%= capsule.title %>
+      </a>
     </li>
   <% end %>
 </ul>
