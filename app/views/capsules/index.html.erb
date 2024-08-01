@@ -1,2 +1,10 @@
 <h1>Capsules#index</h1>
 <p>Find me in app/views/capsules/index.html.erb</p>
+
+<ul>
+  <% @capsules.each do |capsule| %>
+    <li>
+      <%= capsule.title %>
+    </li>
+  <% end %>
+</ul>
